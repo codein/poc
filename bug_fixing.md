@@ -2,8 +2,7 @@
 > [Edsger W. Dijkstra](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra): 
 > **“If debugging is the process of removing bugs, then programming must be the process of putting them in”**
 
-> Lubarsky’s Law of Cybernetic Entomology: 
-> **"There’s always one more bug"**
+> **Lubarsky’s Law of Cybernetic Entomology:  "There’s always one more bug"**
 
 ## The purpose of this document is to 
 
@@ -50,4 +49,5 @@ The ability of proper and quick bug reproducing is really important.
 * [TheBugFixManifesto](https://krasimir.github.io/TheBugFixManifesto/)
 * [Steps to fix a software error](http://www.makinggoodsoftware.com/2009/06/14/7-steps-to-fix-an-error/)
 * [How To Be Calm Under Pressure: Secrets From A Bomb Disposal Expert](http://www.bakadesuyo.com/2017/01/calm-under-pressure/)
- 
+* [Strategies for Learning from Failure: Spectrum of failures](https://hbr.org/2011/04/strategies-for-learning-from-failure) 
+* [Increase Your Return on Failure](https://hbr.org/2016/05/increase-your-return-on-failure)
