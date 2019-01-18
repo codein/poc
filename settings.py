@@ -2,6 +2,13 @@ import os
 
 GITHUB_OAUTH_TOKEN = 'GITHUB_OAUTH_TOKEN'
 
+GITHUB_REPOSITORIES = [
+    {
+
+        'org': 'codein',
+        'repo': 'poc'
+    },
+]
 
 
 ##################
