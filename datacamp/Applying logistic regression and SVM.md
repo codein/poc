@@ -22,7 +22,8 @@ Prerequisites to course:
 ## Chapter 1: Applying logistic regression and SVM
 In this chapter you will learn the basics of applying logistic regression and support vector machines (SVMs) to classification problems. You'll use the syntax from scikit-learn library to fit classification models to real data.
 
-### Lesson 1. scikit-learn refresher
+### Lesson 1: scikit-learn refresher
+---
 a brief description of each lesson's contents including a
 
 #### Learning objectives
