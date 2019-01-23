@@ -150,5 +150,16 @@ linearly separable: a data set can be perfectly explained by a linear classifier
 
 https://www.researchgate.net/figure/Overfitting-and-underfitting-effect-on-error_fig4_325999203
 
+# Exercise
+
+Ex #1 [MultipleChoiceChallenge]
+Question:  Which option correctly describes the difference in initial data for supervised and unsupervised learning?
+Possible answers:
+Supervised learning uses unlabeled data, while unsupervised learning uses labeled data.
+Supervised learning uses labeled data, while unsupervised learning uses unlabeled data.
+Both supervised and unsupervised learning use labeled data.
+Both supervised and unsupervised learning use unlabeled data.
+The correct answer is:  B
+This exercise tests: Is the learner able to discriminate between supervised and unsupervised learning?
 
 
