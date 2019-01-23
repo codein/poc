@@ -68,26 +68,87 @@ Firstly, this lesson will guide you to apply logistic regression and SVC classif
 This lesson discuses what it means when a classifier is linear. It also reviews few key vocabulary that will be used in following chapters.
 
 #### Learning objectives
-
-* The learner will able to identify if a decision boundary is linear.
+* The learner will able to differentiate if a decision boundary is linear or non-linear.
 * The learner will be able to visualize decision boundaries for 2 dimensional datasets.
+* The learner will be refresher on few key vocabulary classification, decision boundary, linear classifier and linearly separable.
 
 
-# exercises
 
-Lesson 1: scikit-learn refresher
-Is the learner able perform steps of supervised learning with KNN classifier?
-MultipleChoiceChallenge
-Solution: supervised learning uses labeled data while unsupervised learning uses unlabeled data
+# Exercise Outline
+MultipleChoiceChallenge,
+BlanksChallenge
+OutputChallenge (which allows selecting the code to match the output or select the output to match the code).
+
+## Lesson 1: scikit-learn refresher
+---
+### 1.1? Is the learner able to apply KNN classifier given the desired code output?
+BlanksChallenge
+Solution: KNeighborsClassifier() function
+
+Is the user able to perform steps of supervised learning with KNN classifier?
+BlanksChallenge
+Solution: pipeline = .fit(X_train,y_train) then .score(X_train, y_train) then .score(X_test, y_test)
+
+Is the learner able to combine the fit and predict functions to obtain predicted class labels when applying KNN classifier?
+BlanksChallenge
+Solution: .fit() and then .predict()
+
+Is the learner able to apply KNN classifier with a specified number of neighbors?
+BlanksChallenge
+Solution: n_neighbors argument
+
+Is the learner understands the need to reserve some data for testing in order to ensure that the model is not over-fitting?
+OutputChallenge
+Solution: .fit(X_train, y_train) instead of .fit(X,y)
+
+Is the learner able to obtain testing accuracies for two KNN with different n_neighbors.
+OutputChallenge
+Solution: .score(X_test, y_test)
+
+Is the learner able to print the training accuracies of a KNN model?
+BlanksChallenge
+Solution: .score(X_test, y_test)
+
+### Lesson 2: Applying logistic regression and SVM
+---
+
+### Is the learner able to avoid using a complex classifier given two models(LogisticRegression and SVC) and SVC models has inferior testing accuracy.
+OutputChallenge
+Solution: preferred_model = svm
+
+### Is the learner able to discriminate between a model under-fitting or over-fitting?
+* MultipleChoiceChallenge
+* Solution: under-fitting models have low training accuracy and over-fitting models have a low testing accuracy
+
+Is the learner able to combine the fit and predict_proba functions to obtain confidence score when applying LogisticRegression?
+BlanksChallenge
+Solution: .fit() and then .predict_proba()
 
 
-given a model
-
+Is the learner able to pick an ideal model given following options
                 A    B   C
 training error  20% 30% 10%
 testing error   15% 10% 20%
+MultipleChoiceChallenge
+Solution: B
+
+### Lesson 3: Linear classifiers
+---
+
+Is learner will able to differentiate if a decision boundary is linear or non-linear given decision boundary visualizations.
+MultipleChoiceChallenge
+Solution: identify liner boundary
+
+Does the learner know the definition of key vocabulary?
+MultipleChoiceChallenge
+Solution:
+classification: learning to predict categories
+decision boundary: the surface separating different predicted classes
+linear classifier: a classifier that learns linear decision boundaries
+linearly separable: a data set can be perfectly explained by a linear classifier
+
 
 https://www.researchgate.net/figure/Overfitting-and-underfitting-effect-on-error_fig4_325999203
 
-##### Archive ####
+
 
