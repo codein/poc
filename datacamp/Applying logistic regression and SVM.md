@@ -112,7 +112,8 @@ Solution: .score(X_test, y_test)
 ### Lesson 2: Applying logistic regression and SVM
 ---
 
-### Is the learner able to avoid using a complex classifier given two models LogisticRegression and SVC fitted on same dataset. SVC models has inferior testing accuracy, but has higher training accuracy.
+### Is the learner able to avoid using a complex classifier given two models LogisticRegression and SVC, which are fitted on same dataset. Additionally SVC model has inferior testing accuracy, but has higher training accuracy.
+
 OutputChallenge
 Solution: preferred_model = linear_svc
 
@@ -155,7 +156,7 @@ https://www.researchgate.net/figure/Overfitting-and-underfitting-effect-on-error
 ## Ex #1 [MultipleChoiceChallenge]
 ### Question:
 
-Refer to the attach image for question. Which option correctly describes the model's behavior?
+Refer to the attached image for question. Which option correctly describes the model's behavior?
 ![Overfitting-and-underfitting-effect-on-error](Overfitting-and-underfitting-effect-on-error.jpeg)
 
 
@@ -216,12 +217,14 @@ preferred_model = linear_svc
 ```
 
 ### This exercise tests:
-Is the learner able to avoid using a complex classifier given two models LogisticRegression and SVC fitted on same dataset. SVC models has inferior testing accuracy, but has higher training accuracy.
+Is the learner able to avoid using a complex classifier given two models LogisticRegression and SVC, which are fitted on same dataset.
+
+Additionally SVC model has inferior testing accuracy, but has higher training accuracy.
 
 
 ## Ex #3 [BlanksChallenge]
 ### Question:
-Fill in the correct function from scikit-learn to get
+Fill in the correct function from scikit-learn to calculate Training accuracy
 ```
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
