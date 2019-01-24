@@ -22,11 +22,11 @@ This lesson reviews the syntax in scikit-learn to achieve various supervised mac
 
 ### Lesson 2: Applying logistic regression and SVM
 ---
-Firstly, this lesson will guide you to apply logistic regression and SVC classifiers on scikit-learn's built in datasets. Secondly it cautions us on the over-fitting risk we take when using a complex classifier.
+Firstly, this lesson will guide you in applying logistic regression and SVC classifiers on scikit-learn's built in datasets. Secondly, it cautions us on the over-fitting risk we take when using a complex classifier.
 
 #### Learning objectives
 * The learner will be able to apply LogisticRegression and SVC with default hyper-parameters
-* The learner will be able to identify when a model is under-fitting or over-fitting.
+* The learner will be able to identify when a model is under-fitting vs over-fitting.
 
 ### Lesson 3: Linear classifiers
 ---
@@ -50,19 +50,19 @@ This lesson discuses what it means when a classifier is linear. It also reviews 
 * BlanksChallenge
 * Solution: `.fit(X_train,y_train)` then `.score(X_train, y_train)` then `.score(X_test, y_test)`
 
-### 1.3 Is the learner able to combine the fit and predict functions to obtain predicted class labels when applying KNN classifier?
+### 1.3 Is the learner able to combine the `fit` and `predict` functions to obtain predicted class labels when applying KNN classifier?
 * BlanksChallenge
-* Solution: .fit() and then .predict()
+* Solution: `.fit()` and then `.predict()`
 
 ### 1.4 Is the learner able to apply KNN classifier with a specified number of neighbors?
 * BlanksChallenge
-* Solution: n_neighbors argument
+* Solution: `n_neighbors` argument
 
 ### 1.5 Does the learner understand the need to reserve some data for testing, in order to ensure that the model is not over-fitting?
 * OutputChallenge
-* Solution: .fit(X_train, y_train) instead of .fit(X,y)
+* Solution: `.fit(X_train, y_train)` instead of `.fit(X,y)`
 
-### 1.6 Is the learner able to obtain testing accuracies for two KNN with different n_neighbors.
+### 1.6 Is the learner able to obtain testing accuracies for two KNN with different `n_neighbors`.
 * OutputChallenge
 * Solution: .score(X_test, y_test)
 
@@ -78,15 +78,15 @@ This lesson discuses what it means when a classifier is linear. It also reviews 
 Given two models fitted on same dataset LogisticRegression and SVC respectively. Additionally SVC model has inferior testing accuracy, but has higher training accuracy.
 
 * OutputChallenge
-* Solution: preferred_model = linear_svc
+* Solution: `preferred_model = linear_svc`
 
-### 2.2 Is the learner able to discriminate between a model under-fitting and over-fitting?
+### 2.2 Is the learner able to discriminate between a model under-fitting vs over-fitting?
 * MultipleChoiceChallenge
 * Solution: under-fitting models have low training accuracy and over-fitting models have a low testing accuracy
 
 ### 2.3 Is the learner able to combine the fit and predict_proba functions to obtain confidence score when applying LogisticRegression?
 * BlanksChallenge
-* Solution: .fit() and then .predict_proba()
+* Solution: `.fit()` and then `.predict_proba()`
 
 
 ### 2.4 Is the learner able to pick an ideal model given following options
@@ -107,7 +107,7 @@ Given decision boundary visualizations.
 * MultipleChoiceChallenge
 * Solution: identify liner boundary
 
-### 3.2 Does the learner know the definition of key vocabulary?
+### 3.2 Does the learner know definitions of key vocabulary?
 * MultipleChoiceChallenge
 * Solution:
     * classification: learning to predict categories
@@ -132,7 +132,7 @@ Refer to the attached image for question. Which option correctly describes the m
 A
 
 ### This exercise tests:
-Is the learner able to discriminate between a model under-fitting or over-fitting?
+Is the learner able to discriminate between a model under-fitting vs over-fitting?
 
 [Image Reference](https://www.researchgate.net/figure/Overfitting-and-underfitting-effect-on-error_fig4_325999203)
 Al-Behadili, Hayder & Ku-Mahamud, Ku & Sagban, Rafid. (2018). Rule pruning techniques in the ant-miner classification algorithm and its variants: A review. 10.1109/ISCAIE.2018.8405448.
@@ -141,7 +141,7 @@ Al-Behadili, Hayder & Ku-Mahamud, Ku & Sagban, Rafid. (2018). Rule pruning techn
 ## Ex #2 [OutputChallenge]
 ### Question:
 
-In this exercise, you'll apply LinearSVC and SVC on wine dataset.
+In this exercise, we've applied LinearSVC and SVC on wine dataset.
 The dataset is divided into three sections `train`,`test` and `unseen`.
 
 Complete the code to achieve better score on `unseen` dataset.
@@ -181,7 +181,9 @@ preferred_model = linear_svc
 ```
 
 ### This exercise tests:
-Is the learner able to avoid using a complex classifier? Given two models fitted on same dataset LogisticRegression and SVC respectively. Additionally SVC model has inferior testing accuracy, but has higher training accuracy.
+Is the learner able to avoid using a complex classifier?
+
+Given two models fitted on same dataset LogisticRegression and SVC respectively. Additionally SVC model has inferior testing accuracy, but has higher training accuracy.
 
 
 ## Ex #3 [BlanksChallenge]
