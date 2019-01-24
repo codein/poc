@@ -1,6 +1,6 @@
 # Linear Classifiers in Python
 
-Chapter outline rubric: see below
+?Chapter outline rubric: see below
 
 Course: [Linear Classifiers in Python](https://www.datacamp.com/courses/linear-classifiers-in-python)
 
@@ -10,15 +10,15 @@ Prerequisites to course:
 * supervised learning, at the level of Supervised Learning with scikit-learn
 
 ## Chapter 1: Applying logistic regression and SVM
-In this chapter you will learn the basics of applying logistic regression and support vector machines (SVMs) to classification problems. You'll use the syntax from  a popular machine learning library for Python called scikit-learn to fit classification models to real data.
+In this chapter you will learn the basics of applying logistic regression and support vector machines (SVMs). You'll use the syntax from a popular machine learning library in Python called scikit-learn.
 
 ### Lesson 1: scikit-learn refresher
 ---
-This lesson reviews the syntax for scikit-learn to achieve various supervised learning steps, ranging from loading data to model evaluation. It also emphasizes the approach required to avoid over-fitting.
+This lesson reviews the syntax in scikit-learn to achieve various supervised machine learning steps, ranging from loading data to model evaluation. It also emphasizes the approach required to avoid over-fitting.
 
 #### Learning objectives
-* The learner will be able to perform steps of supervised learning with KNN classifier, along with tunning it's hyper-parameter.
-* The learner will have an understanding why just training error alone is a poor metric for the models ability to classify unseen data.
+* The learner will be able to perform steps of supervised machine learning with KNN classifier, along with tunning it's hyper-parameter.
+* The learner will be able to identify, why training error alone is a poor metric for the models ability to classify unseen data.
 * The learner will be able to compare models by their individual testing accuracies.
 
 
@@ -35,10 +35,9 @@ Firstly, this lesson will guide you to apply logistic regression and SVC classif
 This lesson discuses what it means when a classifier is linear. It also reviews few key vocabulary that will be used in following chapters.
 
 #### Learning objectives
-* The learner will able to differentiate if a decision boundary is linear or non-linear.
+* The learner will be able to differentiate between linear and non-linear decision boundaries.
 * The learner will be able to visualize decision boundaries for 2 dimensional datasets.
-* The learner will be refresher on few key vocabulary classification, decision boundary, linear classifier and linearly separable.
-
+* The learner will be familiarized on key vocabulary necessary for next chapter.
 
 
 # Exercise Outline
@@ -51,7 +50,7 @@ This lesson discuses what it means when a classifier is linear. It also reviews 
 
 ### 1.2 Is the user able to perform steps of supervised learning with KNN classifier?
 * BlanksChallenge
-* Solution: pipeline = .fit(X_train,y_train) then .score(X_train, y_train) then .score(X_test, y_test)
+* Solution: `.fit(X_train,y_train)` then `.score(X_train, y_train)` then `.score(X_test, y_test)`
 
 ### 1.3 Is the learner able to combine the fit and predict functions to obtain predicted class labels when applying KNN classifier?
 * BlanksChallenge
@@ -61,7 +60,7 @@ This lesson discuses what it means when a classifier is linear. It also reviews 
 * BlanksChallenge
 * Solution: n_neighbors argument
 
-### 1.5 Is the learner understands the need to reserve some data for testing in order to ensure that the model is not over-fitting?
+### 1.5 Does the learner understand the need to reserve some data for testing, in order to ensure that the model is not over-fitting?
 * OutputChallenge
 * Solution: .fit(X_train, y_train) instead of .fit(X,y)
 
@@ -76,11 +75,14 @@ This lesson discuses what it means when a classifier is linear. It also reviews 
 ### Lesson 2: Applying logistic regression and SVM
 
 
-### 2.1 Is the learner able to avoid using a complex classifier given two models LogisticRegression and SVC, which are fitted on same dataset? Additionally SVC model has inferior testing accuracy, but has higher training accuracy.
+### 2.1 Is the learner able to avoid using a complex classifier?
+
+Given two models fitted on same dataset LogisticRegression and SVC respectively. Additionally SVC model has inferior testing accuracy, but has higher training accuracy.
+
 * OutputChallenge
 * Solution: preferred_model = linear_svc
 
-### 2.2 Is the learner able to discriminate between a model under-fitting or over-fitting?
+### 2.2 Is the learner able to discriminate between a model under-fitting and over-fitting?
 * MultipleChoiceChallenge
 * Solution: under-fitting models have low training accuracy and over-fitting models have a low testing accuracy
 
@@ -100,7 +102,10 @@ testing error  | 15% | 10% |  20%|
 
 ### Lesson 3: Linear classifiers
 
-### 3.1 Is learner will able to differentiate if a decision boundary is linear or non-linear given decision boundary visualizations.
+### 3.1 Is learner will able to differentiate between linear and non-linear decision boundaries?
+
+Given decision boundary visualizations.
+
 * MultipleChoiceChallenge
 * Solution: identify liner boundary
 
@@ -178,9 +183,7 @@ preferred_model = linear_svc
 ```
 
 ### This exercise tests:
-Is the learner able to avoid using a complex classifier given two models LogisticRegression and SVC, which are fitted on same dataset.
-
-Additionally SVC model has inferior testing accuracy, but has higher training accuracy.
+Is the learner able to avoid using a complex classifier? Given two models fitted on same dataset LogisticRegression and SVC respectively. Additionally SVC model has inferior testing accuracy, but has higher training accuracy.
 
 
 ## Ex #3 [BlanksChallenge]
