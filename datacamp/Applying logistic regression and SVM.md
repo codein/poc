@@ -1,7 +1,5 @@
 # Linear Classifiers in Python
 
-?Chapter outline rubric: see below
-
 Course: [Linear Classifiers in Python](https://www.datacamp.com/courses/linear-classifiers-in-python)
 
 Prerequisites to course:
@@ -72,7 +70,7 @@ This lesson discuses what it means when a classifier is linear. It also reviews 
 * BlanksChallenge
 * Solution: .score(X_test, y_test)
 
-### Lesson 2: Applying logistic regression and SVM
+## Lesson 2: Applying logistic regression and SVM
 
 
 ### 2.1 Is the learner able to avoid using a complex classifier?
@@ -100,7 +98,7 @@ testing error  | 15% | 10% |  20%|
 * MultipleChoiceChallenge
 * Solution: B
 
-### Lesson 3: Linear classifiers
+## Lesson 3: Linear classifiers
 
 ### 3.1 Is learner will able to differentiate between linear and non-linear decision boundaries?
 
