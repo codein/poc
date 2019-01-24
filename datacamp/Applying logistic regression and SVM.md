@@ -105,16 +105,16 @@ Is the learner able to obtain testing accuracies for two KNN with different n_ne
 OutputChallenge
 Solution: .score(X_test, y_test)
 
-Is the learner able to print the training accuracies of a KNN model?
+Is the learner able to calculate training accuracy for a KNN model?
 BlanksChallenge
 Solution: .score(X_test, y_test)
 
 ### Lesson 2: Applying logistic regression and SVM
 ---
 
-### Is the learner able to avoid using a complex classifier given two models(LogisticRegression and SVC) and SVC models has inferior testing accuracy.
+### Is the learner able to avoid using a complex classifier given two models LogisticRegression and SVC fitted on same dataset. SVC models has inferior testing accuracy, but has higher training accuracy.
 OutputChallenge
-Solution: preferred_model = svm
+Solution: preferred_model = linear_svc
 
 ### Is the learner able to discriminate between a model under-fitting or over-fitting?
 * MultipleChoiceChallenge
@@ -152,14 +152,93 @@ https://www.researchgate.net/figure/Overfitting-and-underfitting-effect-on-error
 
 # Exercise
 
-Ex #1 [MultipleChoiceChallenge]
-Question:  Which option correctly describes the difference in initial data for supervised and unsupervised learning?
-Possible answers:
-Supervised learning uses unlabeled data, while unsupervised learning uses labeled data.
-Supervised learning uses labeled data, while unsupervised learning uses unlabeled data.
-Both supervised and unsupervised learning use labeled data.
-Both supervised and unsupervised learning use unlabeled data.
-The correct answer is:  B
-This exercise tests: Is the learner able to discriminate between supervised and unsupervised learning?
+## Ex #1 [MultipleChoiceChallenge]
+### Question:
+
+Refer to the attach image for question. Which option correctly describes the model's behavior?
+![Overfitting-and-underfitting-effect-on-error](Overfitting-and-underfitting-effect-on-error.jpeg)
 
 
+### Possible answers:
+* A. Overfitting
+* B. Underfitting
+
+### The correct answer is:
+A
+
+### This exercise tests:
+Is the learner able to discriminate between a model under-fitting or over-fitting?
+
+[Image Reference](https://www.researchgate.net/figure/Overfitting-and-underfitting-effect-on-error_fig4_325999203)
+Al-Behadili, Hayder & Ku-Mahamud, Ku & Sagban, Rafid. (2018). Rule pruning techniques in the ant-miner classification algorithm and its variants: A review. 10.1109/ISCAIE.2018.8405448.
+
+
+## Ex #2 [OutputChallenge]
+### Question:
+
+In this exercise, you'll apply LinearSVC and SVC on wine dataset.
+The dataset is divided into three sections `train`,`test` and `unseen`.
+
+Complete the code to achieve better score on `unseen` dataset.
+```
+
+import sklearn.datasets
+from sklearn.model_selection import train_test_split
+from sklearn.svm import LinearSVC
+from sklearn.svm import SVC
+
+wine = sklearn.datasets.load_wine()
+X_train, X_unseen, y_train, y_unseen = train_test_split(wine.data, wine.target)
+X_train, X_test, y_train, y_test = train_test_split(X_train, y_train)
+
+
+linear_svc = LinearSVC()
+svc = SVC() # default hyperparameters
+
+linear_svc.fit(X_train, y_train)
+print(linear_svc.score(X_train, y_train))
+print(linear_svc.score(X_test, y_test))
+
+svc.fit(X_train, y_train)
+print(svc.score(X_train, y_train))
+print(svc.score(X_test, y_test))
+
+
+preferred_model = _ _ _ _
+
+print(preferred_model.score(X_unseen, y_unseen))
+
+```
+
+### The correct answer is:
+```
+preferred_model = linear_svc
+```
+
+### This exercise tests:
+Is the learner able to avoid using a complex classifier given two models LogisticRegression and SVC fitted on same dataset. SVC models has inferior testing accuracy, but has higher training accuracy.
+
+
+## Ex #3 [BlanksChallenge]
+### Question:
+Fill in the correct function from scikit-learn to get
+```
+from sklearn import datasets
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+digits = datasets.load_digits()
+Xtrain, Xtest, ytrain, ytest = train_test_split(digits.data, digits.target)
+
+knn = KNeighborsClassifier()
+knn.fit(Xtrain,ytrain)
+
+training_accuracy = knn._ _ _ _
+
+print("Training accuracy = {0}".format(training_accuracy))
+```
+
+### The correct answer is:
+`score(X_test, y_test)`
+
+### This exercise tests:
+Is the learner able to calculate training accuracy for a KNN model?
