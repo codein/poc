@@ -81,67 +81,73 @@ OutputChallenge (which allows selecting the code to match the output or select t
 
 ## Lesson 1: scikit-learn refresher
 ---
-### Is the learner able to apply KNN classifier given the desired code output?
-#### BlanksChallenge
-#### Solution:
-KNeighborsClassifier() function
+### 1.1 Is the learner able to apply KNN classifier given the desired code output?
+* BlanksChallenge
+* Solution: KNeighborsClassifier() function
 
-Is the user able to perform steps of supervised learning with KNN classifier?
-BlanksChallenge
-Solution: pipeline = .fit(X_train,y_train) then .score(X_train, y_train) then .score(X_test, y_test)
+### 1.1 Is the user able to perform steps of supervised learning with KNN classifier?
+* BlanksChallenge
+* Solution: pipeline = .fit(X_train,y_train) then .score(X_train, y_train) then .score(X_test, y_test)
 
-Is the learner able to combine the fit and predict functions to obtain predicted class labels when applying KNN classifier?
-BlanksChallenge
-Solution: .fit() and then .predict()
+### 1.1 Is the learner able to combine the fit and predict functions to obtain predicted class labels when applying KNN classifier?
+* BlanksChallenge
+* Solution: .fit() and then .predict()
 
-Is the learner able to apply KNN classifier with a specified number of neighbors?
-BlanksChallenge
-Solution: n_neighbors argument
+### 1.1 Is the learner able to apply KNN classifier with a specified number of neighbors?
+* BlanksChallenge
+* Solution: n_neighbors argument
 
-Is the learner understands the need to reserve some data for testing in order to ensure that the model is not over-fitting?
-OutputChallenge
-Solution: .fit(X_train, y_train) instead of .fit(X,y)
+### 1.1 Is the learner understands the need to reserve some data for testing in order to ensure that the model is not over-fitting?
+* OutputChallenge
+* Solution: .fit(X_train, y_train) instead of .fit(X,y)
 
-Is the learner able to obtain testing accuracies for two KNN with different n_neighbors.
-OutputChallenge
-Solution: .score(X_test, y_test)
+### 1.1 Is the learner able to obtain testing accuracies for two KNN with different n_neighbors.
+* OutputChallenge
+* Solution: .score(X_test, y_test)
 
-Is the learner able to calculate training accuracy for a KNN model?
-BlanksChallenge
-Solution: .score(X_test, y_test)
+### 1.1 Is the learner able to calculate training accuracy for a KNN model?
+* BlanksChallenge
+* Solution: .score(X_test, y_test)
 
 ### Lesson 2: Applying logistic regression and SVM
 ---
 
-### Is the learner able to avoid using a complex classifier given two models LogisticRegression and SVC, which are fitted on same dataset. Additionally SVC model has inferior testing accuracy, but has higher training accuracy.
+### 2.1 Is the learner able to avoid using a complex classifier given two models LogisticRegression and SVC, which are fitted on same dataset? Additionally SVC model has inferior testing accuracy, but has higher training accuracy.
+* OutputChallenge
+* Solution: preferred_model = linear_svc
 
-OutputChallenge
-Solution: preferred_model = linear_svc
-
-### Is the learner able to discriminate between a model under-fitting or over-fitting?
+### 2.2 Is the learner able to discriminate between a model under-fitting or over-fitting?
 * MultipleChoiceChallenge
 * Solution: under-fitting models have low training accuracy and over-fitting models have a low testing accuracy
 
-Is the learner able to combine the fit and predict_proba functions to obtain confidence score when applying LogisticRegression?
-BlanksChallenge
-Solution: .fit() and then .predict_proba()
+### 2.3 Is the learner able to combine the fit and predict_proba functions to obtain confidence score when applying LogisticRegression?
+* BlanksChallenge
+* Solution: .fit() and then .predict_proba()
 
 
-Is the learner able to pick an ideal model given following options
-                A    B   C
-training error  20% 30% 10%
-testing error   15% 10% 20%
-MultipleChoiceChallenge
-Solution: B
+### 2.4 Is the learner able to pick an ideal model given following options
+|              | A |   B |  C|
+---------------
+training error | 20% | 30% | 10%|
+testing error  | 15% | 10% |  20%|
+
+* MultipleChoiceChallenge
+* Solution: B
 
 ### Lesson 3: Linear classifiers
 ---
 
-Is learner will able to differentiate if a decision boundary is linear or non-linear given decision boundary visualizations.
-MultipleChoiceChallenge
-Solution: identify liner boundary
+### 3.1 Is learner will able to differentiate if a decision boundary is linear or non-linear given decision boundary visualizations.
+* MultipleChoiceChallenge
+* Solution: identify liner boundary
 
-
+### 3.2 Does the learner know the definition of key vocabulary?
+* MultipleChoiceChallenge
+* Solution:
+    * classification: learning to predict categories
+    * decision boundary: the surface separating different predicted classes
+    * linear classifier: a classifier that learns linear decision boundaries
+    * linearly separable: a data set can be perfectly explained by a linear classifier
 
 
 https://www.researchgate.net/figure/Overfitting-and-underfitting-effect-on-error_fig4_325999203
