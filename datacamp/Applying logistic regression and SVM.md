@@ -81,9 +81,10 @@ OutputChallenge (which allows selecting the code to match the output or select t
 
 ## Lesson 1: scikit-learn refresher
 ---
-### 1.1? Is the learner able to apply KNN classifier given the desired code output?
-BlanksChallenge
-Solution: KNeighborsClassifier() function
+### Is the learner able to apply KNN classifier given the desired code output?
+#### BlanksChallenge
+#### Solution:
+KNeighborsClassifier() function
 
 Is the user able to perform steps of supervised learning with KNN classifier?
 BlanksChallenge
@@ -140,13 +141,7 @@ Is learner will able to differentiate if a decision boundary is linear or non-li
 MultipleChoiceChallenge
 Solution: identify liner boundary
 
-Does the learner know the definition of key vocabulary?
-MultipleChoiceChallenge
-Solution:
-classification: learning to predict categories
-decision boundary: the surface separating different predicted classes
-linear classifier: a classifier that learns linear decision boundaries
-linearly separable: a data set can be perfectly explained by a linear classifier
+
 
 
 https://www.researchgate.net/figure/Overfitting-and-underfitting-effect-on-error_fig4_325999203
