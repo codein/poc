@@ -80,37 +80,37 @@ BlanksChallenge
 OutputChallenge (which allows selecting the code to match the output or select the output to match the code).
 
 ## Lesson 1: scikit-learn refresher
----
+
 ### 1.1 Is the learner able to apply KNN classifier given the desired code output?
 * BlanksChallenge
 * Solution: KNeighborsClassifier() function
 
-### 1.1 Is the user able to perform steps of supervised learning with KNN classifier?
+### 1.2 Is the user able to perform steps of supervised learning with KNN classifier?
 * BlanksChallenge
 * Solution: pipeline = .fit(X_train,y_train) then .score(X_train, y_train) then .score(X_test, y_test)
 
-### 1.1 Is the learner able to combine the fit and predict functions to obtain predicted class labels when applying KNN classifier?
+### 1.3 Is the learner able to combine the fit and predict functions to obtain predicted class labels when applying KNN classifier?
 * BlanksChallenge
 * Solution: .fit() and then .predict()
 
-### 1.1 Is the learner able to apply KNN classifier with a specified number of neighbors?
+### 1.4 Is the learner able to apply KNN classifier with a specified number of neighbors?
 * BlanksChallenge
 * Solution: n_neighbors argument
 
-### 1.1 Is the learner understands the need to reserve some data for testing in order to ensure that the model is not over-fitting?
+### 1.5 Is the learner understands the need to reserve some data for testing in order to ensure that the model is not over-fitting?
 * OutputChallenge
 * Solution: .fit(X_train, y_train) instead of .fit(X,y)
 
-### 1.1 Is the learner able to obtain testing accuracies for two KNN with different n_neighbors.
+### 1.6 Is the learner able to obtain testing accuracies for two KNN with different n_neighbors.
 * OutputChallenge
 * Solution: .score(X_test, y_test)
 
-### 1.1 Is the learner able to calculate training accuracy for a KNN model?
+### 1.7 Is the learner able to calculate training accuracy for a KNN model?
 * BlanksChallenge
 * Solution: .score(X_test, y_test)
 
 ### Lesson 2: Applying logistic regression and SVM
----
+
 
 ### 2.1 Is the learner able to avoid using a complex classifier given two models LogisticRegression and SVC, which are fitted on same dataset? Additionally SVC model has inferior testing accuracy, but has higher training accuracy.
 * OutputChallenge
@@ -127,7 +127,7 @@ OutputChallenge (which allows selecting the code to match the output or select t
 
 ### 2.4 Is the learner able to pick an ideal model given following options
 |              | A |   B |  C|
----------------
+|-|-|-|-|
 training error | 20% | 30% | 10%|
 testing error  | 15% | 10% |  20%|
 
@@ -135,7 +135,6 @@ testing error  | 15% | 10% |  20%|
 * Solution: B
 
 ### Lesson 3: Linear classifiers
----
 
 ### 3.1 Is learner will able to differentiate if a decision boundary is linear or non-linear given decision boundary visualizations.
 * MultipleChoiceChallenge
