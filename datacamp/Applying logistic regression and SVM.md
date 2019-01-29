@@ -46,36 +46,36 @@ This lesson discuses what it means when a classifier is linear. It also reviews 
 * BlanksChallenge
 * Solution: KNeighborsClassifier() function
 
-### 1.2 Is the user able to perform steps of supervised learning with KNN classifier?
+### 1.2 Is the learner able to combine the fit a KNN classifier to given dataset?
 * BlanksChallenge
-* Solution: `.fit(X_train,y_train)` then `.score(X_train, y_train)` then `.score(X_test, y_test)`
+* Solution: `.fit()`
 
-### 1.3 Is the learner able to combine the `fit` and `predict` functions to obtain predicted class labels when applying KNN classifier?
-* BlanksChallenge
-* Solution: `.fit()` and then `.predict()`
-
-### 1.4 Is the learner able to apply KNN classifier with a specified number of neighbors?
+### 1.3 Is the learner able to apply KNN classifier with a specified number of neighbors?
 * BlanksChallenge
 * Solution: `n_neighbors` argument
 
-### 1.5 Does the learner understand the need to reserve some data for testing, in order to ensure that the model is not over-fitting?
-* OutputChallenge
-* Solution: `.fit(X_train, y_train)` instead of `.fit(X,y)`
+### 1.4 Is the learner able to describe how to avoid over-fitting a model?
+* MultipleChoiceChallenge
+* Solution: reserve some data for testing
 
-### 1.6 Is the learner able to obtain testing accuracies for two KNN with different `n_neighbors`.
+### 1.5 Is the learner able to calculate testing accuracy for a KNN model.
 * OutputChallenge
 * Solution: .score(X_test, y_test)
 
-### 1.7 Is the learner able to calculate training accuracy for a KNN model?
+### 1.6 Is the learner able to calculate training accuracy for a KNN model?
 * BlanksChallenge
-* Solution: .score(X_test, y_test)
+* Solution: .score(X_train, y_train)
+
+### 1.7 Is the learner able to obtain predicted class labels from a KNN model?
+* BlanksChallenge
+* Solution: `.predict()`
 
 ## Lesson 2: Applying logistic regression and SVM
 
 
-### 2.1 Is the learner able to avoid using a complex classifier?
+### 2.1 Is the learner able to avoid picking a over-fitting complex classifier(ex. SVC)
 
-Given two models fitted on same dataset LogisticRegression and SVC respectively. Additionally SVC model has inferior testing accuracy, but has higher training accuracy.
+Given two models one over-fitting complex model(ex. SVC) and another simpler model(ex. LogisticRegression) with higher testing accuracy, but lower training accuracy.
 
 * OutputChallenge
 * Solution: `preferred_model = linear_svc`
@@ -181,9 +181,9 @@ preferred_model = linear_svc
 ```
 
 ### This exercise tests:
-Is the learner able to avoid using a complex classifier?
+Is the learner able to avoid picking a over-fitting complex classifier?
 
-Given two models fitted on same dataset LogisticRegression and SVC respectively. Additionally SVC model has inferior testing accuracy, but has higher training accuracy.
+Given two models one over-fitting complex model(ex. SVC) and another simpler model(ex. LogisticRegression) with higher testing accuracy, but lower training accuracy.
 
 
 ## Ex #3 [BlanksChallenge]
@@ -205,7 +205,7 @@ print("Training accuracy = {0}".format(training_accuracy))
 ```
 
 ### The correct answer is:
-`score(X_test, y_test)`
+`score(X_train, y_train)`
 
 ### This exercise tests:
 Is the learner able to calculate training accuracy for a KNN model?

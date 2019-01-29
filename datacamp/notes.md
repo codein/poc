@@ -30,3 +30,13 @@ Are the learning objectives should be specific? If the objectives aren't clear t
 
 
 #### notes ####
+
+Chapter outline rubric
+Are the learning objectives concise?
+Do you cover only the learning objectives relevant to this course?
+Learning objectives of prerequisite courses should not be tackled in the Practice set of this course.
+To understand what topics are covered in prerequisite courses, check the corresponding course page at datacamp.com.  You’ll find the course prerequisites on the dedicated course page, at the bottom of the right sidebar.
+Are the learning objectives testable? Rather than writing "Student will understand X," a good learning objective should specify what the student will do to demonstrate what they know.
+Are the learning objectives should be specific? If the objectives aren't clear to you, then they really won't be to the students.
+
+
