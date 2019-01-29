@@ -19,6 +19,15 @@ This lesson reviews the syntax in scikit-learn to achieve various supervised mac
 * The learner will be able to identify, why training error alone is a poor metric for the models ability to classify unseen data.
 * The learner will be able to compare models by their individual testing accuracies.
 
+#### Packages, functions, and datasets
+* `from sklearn.neighbors import KNeighborsClassifier`
+* `from sklearn.model_selection import train_test_split`
+* `sklearn.datasets.fetch_20newsgroups_vectorized()`
+* `knn = KNeighborsClassifier(n_neighbors=1)`
+* `knn.fit(X_train, y_train)`
+* `knn.score(X_test, y_test)`
+* `knn.predict(X)`
+
 
 ### Lesson 2: Applying logistic regression and SVM
 ---
@@ -28,6 +37,13 @@ Firstly, this lesson will guide you in applying logistic regression and SVC clas
 * The learner will be able to apply LogisticRegression and SVC with default hyper-parameters
 * The learner will be able to identify when a model is under-fitting vs over-fitting.
 
+#### Packages, functions, and datasets
+* `from sklearn.linear_model import LogisticRegression`
+* `sklearn.datasets.load_wine()`
+* `lr.predict_proba(wine.data[:1])`
+* `from sklearn.svm import LinearSVC`
+* `from sklearn.svm import SVC`
+
 ### Lesson 3: Linear classifiers
 ---
 This lesson discuses what it means when a classifier is linear. It also reviews few key vocabulary that will be used in following chapters.
@@ -36,7 +52,6 @@ This lesson discuses what it means when a classifier is linear. It also reviews 
 * The learner will be able to differentiate between linear and non-linear decision boundaries.
 * The learner will be able to visualize decision boundaries for 2 dimensional datasets.
 * The learner will be familiarized on key vocabulary necessary for next chapter.
-
 
 # Exercise Outline
 
